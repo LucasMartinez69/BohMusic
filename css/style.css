@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    position: relative;
+    width: 96%;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondoPrincipal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.negro{
+    position: relative;
+    background: #0a91ff;
+    width: 370px;
+    height: 476px;
+    
+}
