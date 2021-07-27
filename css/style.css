@@ -12,11 +12,12 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    flex-direction: column; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 30px;
 }
 
 .flexFondo{
@@ -33,6 +34,24 @@ body{
     width: 100;
     height: 100%;
     z-index: -1;
+}
+
+.imgCompartir{
+    width:75%;
+
+}
+
+.song{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-canciones{
+    border: 8px solid rgb(247, 87, 247);
+    border-radius: 20px;
+    
 }
 
 @media (min-width: 1050px){
