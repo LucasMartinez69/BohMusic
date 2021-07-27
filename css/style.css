@@ -9,6 +9,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .fondoPrincipal{
@@ -19,8 +22,9 @@ body{
 
 .negro{
     position: relative;
-    background: #0a91ff;
-    width: 370px;
+    background: #04090D;
+    width: 100vw;
     height: 476px;
-    
+    max-width: 370px;
+    margin-top: 12%;
 }
