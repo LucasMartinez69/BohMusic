@@ -15,12 +15,30 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: -1;
 }
 
 .negro{
-    position: relative;
+    /*position: relative;*/
     background: #0a91ff;
     width: 370px;
     height: 476px;
+    
+}
+
+.botonCompartir{
+    background-color: #FFFFFF;
+    width: 4em;
+    height: 4em;
+    border: none;
+    border-radius: 50%;
+    top: 5%px;
+}
+
+.canciones{
+
+}
+
+.song1{
     
 }
