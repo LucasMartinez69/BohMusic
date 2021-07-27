@@ -10,9 +10,9 @@ body{
 .container{
     position: fixed;
     width: 100vw;
+    max-width: 1299px;
     display: flex;
-    justify-content: center;
-    flex-direction: column; 
+    justify-content: space-between;
     top: 0;
     left: 0;
     right: 0;
@@ -45,11 +45,10 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    
 }
 
 .img-canciones{
-    border: 8px solid rgb(247, 87, 247);
+    border: 8px solid rgba(247, 87, 247, 0.712);
     border-radius: 20px;
     
 }
@@ -87,7 +86,7 @@ body{
 }
 
 .canciones{
-    width: 30em;
+    width: 20em;
     max-width: 300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
