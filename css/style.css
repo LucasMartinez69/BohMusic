@@ -1,11 +1,29 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /*si esto selecciona todos los elementos, nos sigue siendo util?? 
+    no debería alternarse entre border-box y content-box??*/
 }
 
 body{
     margin: 0px;
     background-color: black;
 }
+
+.fondoPrincipal{
+    position: absolute;
+    width: 100;
+    height: 100%;
+    z-index: -1;
+}
+
+/*.flexFondo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}*/      /*lo he comentado porque no se donde se aplica esta clase*/
 
 .container{
     position: fixed;
@@ -20,39 +38,6 @@ body{
     padding: 30px;
 }
 
-.flexFondo{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.fondoPrincipal{
-    position: absolute;
-    width: 100;
-    height: 100%;
-    z-index: -1;
-}
-
-.imgCompartir{
-    width:75%;
-
-}
-
-.song{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.img-canciones{
-    border: 8px solid rgba(247, 87, 247, 0.712);
-    border-radius: 20px;
-    
-}
-
 @media (min-width: 1050px){
     .flexFondo{
         position: relative;
@@ -65,7 +50,7 @@ body{
     }
 }
 
-.negro{
+/*.negro{
     position: relative;
     background: #04090D;
     width: 100%;
@@ -73,17 +58,7 @@ body{
     max-width: 370px;
     margin-bottom: 15%;
     
-}
-
-.botonCompartir{
-    background-color: #FFFFFF;
-    width: 4em;
-    height: 4em;
-    border: none;
-    border-radius: 50%;
-    top: 5%;
-    
-}
+}*/      /*creo que esto ya no se usa y se puede eliminar¿?*/
 
 .canciones{
     width: 20em;
@@ -97,6 +72,8 @@ body{
 .img-canciones{
  width: 7em;
  height: 7em;
+ border: 8px solid rgba(247, 87, 247, 0.712);
+ border-radius: 20px;
 }
 
 .nombre-canciones{
@@ -138,4 +115,17 @@ body{
 .song7{
     grid-column: 1 / 2;
     grid-row: 4
+}
+
+.botonCompartir{
+    background-color: #FFFFFF;
+    width: 4em;
+    height: 4em;
+    border: none;
+    border-radius: 50%;
+    top: 5%;
+}
+
+.imgCompartir{
+    width:75%;
 }
