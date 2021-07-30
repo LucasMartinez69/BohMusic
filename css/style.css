@@ -47,7 +47,7 @@ body{
         overflow-y: hidden;
         overflow-x: hidden;
         box-shadow: 0 0 900px 110px rgb(0, 0, 0) inset;
-    }
+    }  /*es el mismo que el de la línea 19? está haciendo alguna función?*/
 }
 
 /*.negro{
