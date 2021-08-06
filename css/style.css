@@ -9,6 +9,10 @@ body{
     background-color: black;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .fondoPrincipal{
     position: absolute;
     width: 100;
@@ -16,14 +20,14 @@ body{
     z-index: -1;
 }
 
-/*.flexFondo{
+.flexFondo{
     position: relative;
     display: flex;
     justify-content: center;
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
-}*/      /*lo he comentado porque no se donde se aplica esta clase*/
+}     
 
 .container{
     position: fixed;
@@ -47,7 +51,7 @@ body{
         overflow-y: hidden;
         overflow-x: hidden;
         box-shadow: 0 0 900px 110px rgb(0, 0, 0) inset;
-    }  /*es el mismo que el de la línea 19? está haciendo alguna función?*/
+    }  /*es el mismo que el de la línea 19? está haciendo alguna función? AÑADE LA SOMBRA QUE OCULTA LOS BORDES*/
 }
 
 /*.negro{
