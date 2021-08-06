@@ -41,39 +41,19 @@ let listaDeCanciones = [
 
 function imprimir (listaObjetos, localizacion){
     let mainCanciones = document.querySelector(localizacion);
-    let cancion= "";
+    let cancion= ""; /*se genera un string vacío para que toda la información
+     se junte en esta caja y no se generen otras*/ 
     listaObjetos.forEach(function (objeto){
         cancion += `
-        <div class="song0">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song1">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song2">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song3">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song4">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song5">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
-        </div>
-        <div class="song6">
-            <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
-            <p class="nombre-canciones">${objeto.nombre}</p>
+        <div class="song">
+            <div class="song-features">
+                <img class="img-canciones" src= "${objeto.img}" alt="${objeto.nombre}">
+                <p class="nombre-canciones">${objeto.nombre}</p>
+            </div>
         </div>
         `;
+        /*console.log(cancion)*/
     });
-    mainCanciones.innerHTML = cancion;
+    mainCanciones.innerHTML = cancion; /*traduce el código metiod en la variable canción, a código html*/
 }
 imprimir(listaDeCanciones, localizacion);
